@@ -86,7 +86,7 @@ define([
         getResponse: function() {
 
              var $container = $(this.dom),
-              value = 'interrupteur : ' + $container.find('.clickswitch').text() + ' -lampe Gauche : ' + $container.find('.clickLlamp').text() + ' -lampe Droite : ' + $container.find('.clickRlamp').text() ;
+              value = '{"interrupteur":' + $container.find('.clickswitch').text() + ', "lampeGauche" : ' + $container.find('.clickLlamp').text() + ', "lampeDroite" : ' + $container.find('.clickRlamp').text() +'}';
 
             return {base : {string : value}};
         },
